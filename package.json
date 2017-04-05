@@ -1,0 +1,30 @@
+{
+  "name": "sequelize_todo_basic",
+  "version": "1.0.0",
+  "description": "Initial Repo for the Blog at barsaley.com",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.4",
+    "sequelize-cli": "^2.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivambarsaley/Sequelize_101.git"
+  },
+  "keywords": [
+    "sequelize",
+    "nodejs",
+    "orm"
+  ],
+  "author": "Shivam Barsaley <barsaley.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shivambarsaley/Sequelize_101/issues"
+  },
+  "homepage": "https://github.com/shivambarsaley/Sequelize_101#readme"
+}
