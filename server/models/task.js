@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       associate: function(models) {
         // associations can be defined here
         Task.belongsTo(models.Todo);
-        //Task.hasMany(models.Doc);
+        Task.hasMany(models.Doc);
       }
     }
   });
