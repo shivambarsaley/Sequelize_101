@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: function(queryInterface, Sequelize) {
-    return queryInterface.createTable('Todos', {
+    return queryInterface.createTable('Categories', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -10,20 +10,6 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING
-      },
-      status: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: true
-      },
-      UserId: {
-        allowNull: false,
-        type: Sequelize.INTEGER,
-        references: { model: 'Users', key: 'id' }
-      },
-      CategoryId: {
-        allowNull: false,
-        type: Sequelize.INTEGER,
-        references: {model: 'Categories', key: 'id'}
       },
       createdAt: {
         allowNull: false,
@@ -36,6 +22,6 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('Todos');
+    return queryInterface.dropTable('Categories');
   }
 };
